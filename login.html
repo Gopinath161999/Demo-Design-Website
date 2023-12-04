@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="create account.css">
+    <link rel="stylesheet" href="login.css">
+
+    <title>Login-page</title>
+</head>
+<body>
+    
+    <!-- Double Navbar -->
+<nav class="navbar">
+    <div class="nav-1 padd">
+        <div class="toplogo"><a href="navbar.html"><img src="img/key to makje skill logo'.PNG" alt="logo"></a></div>
+
+      <div class="login-btns">
+        <a href="login.html" class='btn'>Login</a>
+        <a href="create account.html" class='btn'>Sign up</a>
+      </div>
+    </div>
+    <div class="nav-2 padd">
+      <ul class='nav-list'>
+        <li><a href="navbar.html">Home</a></li>
+        <li><a href="#">Catagories</a></li>
+        <li><a href="#">Course</a></li>
+        <li><a href="#">DemoTest</a></li>
+        <li><a href="#">Subscription</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="login.html" class='btn'>Login</a></li>
+        <li><a href="create account.html" class='btn'>Sign up</a></li>
+      </ul>
+    </div>
+    <div class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
+  </nav>
+  <!-- nav end  -->
+  <!-- background image -->
+  <!-- <div class="backgroundimage">
+    <img src="./img/backgroundimg.jpg" alt="">
+    </div>
+
+    <div class="bodyimage">
+      <center><h1 class="wlcome-text"> <pre>Welcome to <span>Key 2 Make Skills</span> Grow up your Skills </pre></h1></center>
+  </div> -->
+<!-- login page -->
+<div id="right">
+    
+    <div>
+        <form action="" class="login-btn-box" >
+          <h1 style="text-align:center;">Login</h1>
+            <div class="login1">
+            <legend class="size">Email ID : </legend>
+            <input type="email" placeholder="example@gmail.com " class="radius" autocomplete="off">
+            <legend class="size">Password :</legend>
+            <input type="password" placeholder="Password" class="radius" id="pass2" autocomplete="off"><br>
+            <pre style="margin-top:4px;   font-family: 'Times New Roman', Times, serif;"><input type="checkbox" onclick="passvisible1()"> Check Your Passcode                                     </pre>
+            
+            <br>
+            <a class="fpass" href="">Forgot password ?</a>
+            <br><br>
+            <button name="submit" class="btn-box"> <a href="navbar.html" style="color:white;"> LOGIN</a></button>
+
+            <p class="log-text"> You don't have a account ? <br> <a href="create account.html" > create an account... </a></p>
+        </div>
+
+        <div>
+            <button class="button"> <img src="" alt="">  <a href="#" >Continue with Google</a>   </button>
+            <br>
+            <button class="button"> <img src="" alt="">  <a href="#" >Continue with Github</a> </button>
+        </div>
+        </form>
+    </div>
+</div>
+<!-- loin page end -->
+  <script>
+    const nav_list = document.querySelector(".nav-list");
+const menu_toggle = document.querySelector(".menu-toggle");
+
+menu_toggle.addEventListener("click", () => {
+  nav_list.classList.toggle("active");
+  menu_toggle.classList.toggle("open");
+});
+  </script>
+  <script>
+    function passvisible1(){
+      const x=document.getElementById("pass2");
+      if(x.type === "password"){
+        x.type="text";
+      } else {
+        x.type="password";  
+      }
+    }
+  </script>
+</body>
+</html>

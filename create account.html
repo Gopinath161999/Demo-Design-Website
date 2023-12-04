@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="create account.css">
+    <link rel="stylesheet" href="navbar.css">
+
+    <title>Account creation-page</title>
+</head>
+<body>
+    
+    <!-- Double Navbar -->
+<nav class="navbar">
+    <div class="nav-1 padd">
+        <div class="toplogo"><a href="navbar.html"><img src="img/key to makje skill logo'.PNG" alt="logo"></a></div>
+
+      <div class="login-btns">
+        <a href="login.html" class='btn'>Login</a>
+        <a href="create account.html" class='btn'>Sign up</a>
+      </div>
+    </div>
+    <div class="nav-2 padd">
+      <ul class='nav-list'>
+        <li><a href="navbar.html">Home</a></li>
+        <li><a href="#">Catagories</a></li>
+        <li><a href="#">Course</a></li>
+        <li><a href="#">DemoTest</a></li>
+        <li><a href="#">Subscription</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="login.html" class='btn'>Login</a></li>
+        <li><a href="create account.html" class='btn'>Sign up</a></li>
+      </ul>
+    </div>
+    <div class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
+  </nav>
+  <!-- background image -->
+  <!-- <div class="backgroundimage">
+    <img src="./img/backgroundimg.jpg" alt="">
+    </div>
+    <div class="bodyimage">
+      <center><h1 class="wlcome-text"> <pre>Welcome to <span>Key 2 Make Skills</span> Grow up your Skills </pre></h1></center>
+      
+  </div> -->
+<!-- create account -->
+    <div id="right">
+    
+    <div class="signup">
+        <form action="" class="signin" autocomplete="off">
+          <h1 style="text-align:center;">Create_Account</h1>
+            <legend class="size">First Name :</legend>
+               <input type="text" placeholder="First Name..." class="radius">
+
+            <legend class="size">Last Name :</legend>
+            <input type="text" placeholder="Last Name..." class="radius">
+
+            <legend class="size">Mobile number :</legend>
+            <input type="number" placeholder="Mobile Number" class="radius">
+
+            <legend class="size">Gender :</legend>
+            <input type="radio" id="male" name="Gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender" value="female">
+            <label for="female">Female<label>
+            <input type="radio" id="other" name="Gender" value="other">
+            <label for="other">Other</label>
+            <br>
+            <legend class="size">Date of Birth :</legend>
+            <input type="date" placeholder="Date of Birth" class="radius">
+
+            <legend class="size"> Emial ID :</legend>
+            <input type="email" placeholder="Email ID" class="radius">
+
+            <legend class="size">Create Password :</legend>
+            <input type="password" placeholder="Create Password..."  class="radius" id="pass"><br>
+            <input type="checkbox" onclick="passvisible()"> Check Your Passcode
+
+            <legend class="size">Confirm Password :</legend>
+            <input type="password" placeholder="Confirm Password..." class="radius" id="pass1"><br>
+            <input type="checkbox" onclick="passvisible1()"> Check Your Passcode
+<br>
+<br>
+            <button class="submit btn btn-slide"><a href="login.html" style="color:white ;">SIGN UP</a></button>
+
+            <p class="login-link">You have a account ? <a href="login.html">Login</a> </p>
+        </form>
+    </div>
+</div>
+<script>
+  function passvisible(){
+    const x=document.getElementById("pass");
+    if(x.type === "password"){
+      x.type="text";
+    } else {
+      x.type="password";  
+    }
+  }
+  function passvisible1(){
+    const x=document.getElementById("pass1");
+    if(x.type === "password"){
+      x.type="text";
+    } else {
+      x.type="password";  
+    }
+  }
+</script>
+<script>
+  // hamburger simbol
+      const nav_list = document.querySelector(".nav-list");
+  const menu_toggle = document.querySelector(".menu-toggle");
+  
+  menu_toggle.addEventListener("click", () => {
+    nav_list.classList.toggle("active");
+    menu_toggle.classList.toggle("open");
+  });
+    </script>
+</body>
+</html>
